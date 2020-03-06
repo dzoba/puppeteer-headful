@@ -12,9 +12,8 @@ ls
 echo "End ls"
 # Run commands
 # cmd=$@
-cd cd packages/runner/
-npm run dev
-echo "Running '$cmd'!"
+google-chrome --no-sandbox --disable-gpu --disable-setuid-sandbox
+echo "Running Chrome with options!"
 
 if $cmd; then
     # no op
