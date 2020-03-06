@@ -11,10 +11,8 @@ echo "Custom docker"
 ls
 echo "End ls"
 # Run commands
-# cmd=$@
-google-chrome --no-sandbox --disable-gpu --disable-setuid-sandbox
-echo "Running Chrome with options!"
-
+cmd=$@
+echo "Running '$cmd'!"
 if $cmd; then
     # no op
     echo "Successfully ran '$cmd'"
