@@ -11,8 +11,11 @@ echo "Custom docker"
 ls
 echo "End ls"
 # Run commands
-cmd=$@
+# cmd=$@
+cd cd packages/runner/
+npm run dev
 echo "Running '$cmd'!"
+
 if $cmd; then
     # no op
     echo "Successfully ran '$cmd'"
