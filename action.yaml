@@ -1,3 +1,5 @@
-name: Puppeteer Headful
-description: Run puppeteer tests on Github Actions
-image: 'Dockerfile'
+name: 'Puppeteer Headful'
+description: 'Run Puppeteer on Github Actions'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
