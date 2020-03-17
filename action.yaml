@@ -1,0 +1,3 @@
+name: Puppeteer Headful
+description: Run puppeteer tests on Github Actions
+image: 'Dockerfile'
